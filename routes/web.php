@@ -19,9 +19,27 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/create-docs', function () {
+    return view('createDocs');
+})->name('createDocs');
+
+Route::get('/view-docs', function () {
+    return view('viewDocs');
+})->name('viewDocs');
+
+Route::get('/update-docs', function () {
+    return view('updateDocs');
+})->name('updateDocs');
+
+Route::get('/delete-docs', function () {
+    return view('deleteDocs');
+})->name('deleteDocs');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+})
+    ->middleware(['auth', 'verified'])
+    ->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/todo', [TodoController::class, 'index'])->name('todo.index');
@@ -36,4 +54,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
