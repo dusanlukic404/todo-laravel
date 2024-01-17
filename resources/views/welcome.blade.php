@@ -84,7 +84,7 @@
 
             <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                 <div class="grid grid-cols-1 md:grid-cols-2">
-                    <a href="{{ route('createDocs') }}" class="p-6">
+                    <a href="{{ route('createDocs') }}" class="p-6 hover:bg-[#5c7cfa10] transition-all duration-500">
                         <div class="flex items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-500">
@@ -105,7 +105,7 @@
                     </a>
 
                     <a href="{{ route('viewDocs') }}"
-                        class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
+                        class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l hover:bg-[#5c7cfa10] transition-all duration-500">
                         <div class="flex items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-500">
@@ -125,7 +125,7 @@
                         </div>
                     </a>
 
-                    <a href="{{ route('updateDocs') }}" class="p-6 border-t border-gray-200 dark:border-gray-700">
+                    <a href="{{ route('updateDocs') }}" class="p-6 border-t border-gray-200 dark:border-gray-700 hover:bg-[#5c7cfa10] transition-all duration-500">
                         <div class="flex items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-500">
@@ -145,7 +145,7 @@
                         </div>
                     </a>
 
-                    <a href="{{ route('deleteDocs') }}"
+                    <a href="{{ route('deleteDocs') }}" class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l hover:bg-[#5c7cfa10] transition-all duration-500""
                         class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
                         <div class="flex items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
